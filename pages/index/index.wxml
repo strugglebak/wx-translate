@@ -6,4 +6,10 @@
       <text class='iconfont icon-down'></text>
     </navigator>    
   </view>
+  <view class='input-area'>
+    <view class='textarea-container'>
+      <textarea>xxx</textarea>
+      <text class='iconfont icon-close'></text>
+    </view>
+  </view>
 </view>
