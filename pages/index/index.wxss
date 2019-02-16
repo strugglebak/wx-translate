@@ -6,7 +6,6 @@ view.to-change-page {
   font-size: 24rpx;
   padding: 20rpx 40rpx;
 }
-
 navigator .iconfont {
   font-size: 20rpx;
   color: #8995a1;
@@ -16,7 +15,6 @@ view.textarea-container {
   background: white;
   position: relative;
 }
-
 view.textarea-container textarea {
   background: white;
   padding: 30rpx;
@@ -42,4 +40,14 @@ view.output-area text.title {
 }
 view.output-area .result-container {
   padding: 20rpx 0;
+}
+
+view.copyright {
+  color: #999;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  align-items: flex-end;
+  font-size: 28rpx;
+  padding-bottom: 20rpx;
 }

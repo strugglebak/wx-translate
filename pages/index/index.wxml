@@ -21,4 +21,7 @@
     </view>
   </view>
 
+  <view class='copyright'>
+    <text>© strugglebak 2019</text>
+  </view>
 </view>
