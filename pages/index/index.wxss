@@ -10,7 +10,9 @@ navigator .iconfont {
   font-size: 20rpx;
   color: #8995a1;
 }
-
+view.input-area {
+  border-bottom: 1px solid #c7cee0;
+}
 view.textarea-container {
   background: white;
   position: relative;
