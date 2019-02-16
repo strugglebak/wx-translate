@@ -1,1 +1,12 @@
 /**index.wxss**/
+view.to-change-page {
+  display: flex;
+  align-items: center;
+  color: #8995a1;
+  font-size: 24rpx;
+  border: 1px solid red;
+}
+navigator .iconfont {
+  font-size: 20rpx;
+  color: #8995a1;
+}

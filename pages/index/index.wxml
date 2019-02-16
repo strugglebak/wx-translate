@@ -1,4 +1,9 @@
 <!--index.wxml-->
-<view class="container">
-
+<view class='container'>
+  <view class='to-change-page'>
+    <navigator>
+      <text class='lang'>翻译成英文</text>
+      <text class='iconfont icon-down'></text>
+    </navigator>    
+  </view>
 </view>
