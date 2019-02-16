@@ -6,10 +6,19 @@
       <text class='iconfont icon-down'></text>
     </navigator>    
   </view>
+
   <view class='input-area'>
     <view class='textarea-container'>
-      <textarea>xxx</textarea>
+      <textarea>翻译原文</textarea>
       <text class='iconfont icon-close'></text>
     </view>
   </view>
+
+  <view class='output-area'>
+    <text class='title'>译文</text>
+    <view class='result-container'>
+      <text class='result'>翻译结果</text>
+    </view>
+  </view>
+
 </view>

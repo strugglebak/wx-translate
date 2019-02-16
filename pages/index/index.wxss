@@ -4,31 +4,42 @@ view.to-change-page {
   align-items: center;
   color: #8995a1;
   font-size: 24rpx;
-  border: 1px solid red;
+  padding: 20rpx 40rpx;
 }
+
 navigator .iconfont {
   font-size: 20rpx;
   color: #8995a1;
 }
 
 view.textarea-container {
-  border: 1px solid black;
   background: white;
   position: relative;
 }
 
 view.textarea-container textarea {
-  border: 1px solid red;
   background: white;
   padding: 30rpx;
   padding-right: 0;
   width: calc(100% - 48rpx);
 }
 view.textarea-container .iconfont {
-  border: 1px solid red;
   position: absolute;
   top: 20rpx; right: 12rpx;
   z-index: 999;
   font-size: 40rpx;
   color: #888;
+}
+
+view.output-area {
+  min-height: 80rpx;
+  background: white;
+  padding: 40rpx;
+}
+view.output-area text.title {
+  font-size: 28rpx;
+  color: #8995a1;
+}
+view.output-area .result-container {
+  padding: 20rpx 0;
 }
