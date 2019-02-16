@@ -1,11 +1,28 @@
 {
   "pages":[
-    "pages/index/index"
+    "pages/index/index",
+    "pages/history/history"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "sk 翻译",
-    "navigationBarTextStyle":"#ff"
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1c1b21",
+    "navigationBarTitleText": "翻译小助手",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar":{
+    "position": "top",
+    "color": "#595959",
+    "selectedColor": "#1c1b21",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "翻译",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "历史",
+        "pagePath": "pages/history/history"  
+      }
+    ]
   }
 }
