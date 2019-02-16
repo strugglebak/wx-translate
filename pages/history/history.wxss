@@ -1,0 +1,33 @@
+/* history.wxss */
+view.container {
+  padding: 40rpx;
+  display: flex;
+  height: 100%;
+}
+.history-title {
+  font-size: 26rpx;
+  line-height: 38rpx;
+  color: #8995a1;
+  position: fixed;
+  top: 0; left: 0;
+  padding: 40rpx;
+  overflow: hidden;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.3s;
+}
+.history-title.stiky {
+  background-color: white;
+}
+scroll-view.history-result-list {
+  margin-top: 50rpx;
+}
+view.history-result {
+  margin-top: 40rpx;
+}
+.orign-text {
+  color: #8995a1;
+}
+.tanslate-text {
+  margin-top: 16rpx;
+}
