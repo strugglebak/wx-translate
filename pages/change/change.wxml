@@ -1,17 +1,17 @@
 <!-- change.wxml -->
 <view class='container'>
   <text class='title'>翻译成</text>
-  <view class='lang-list'
-    wx:for='{{langList}}'
-    wx:key='index'
-    wx:for-item='langItem'
-    bindtap='onTapItem'
-    data-index='{{index}}'
-    data-lang='{{langItem.lang}}'
-    data-chinese='{{langItem.chinese}}'
-  >
+  <view class='lang-list'>
     <view class='lang-wrapper'>
-      <view class='item'>
+      <view class='item'
+        wx:for='{{langList}}'
+        wx:key='index'
+        wx:for-item='langItem'
+        bindtap='onTapItem'
+        data-index='{{index}}'
+        data-lang='{{langItem.lang}}'
+        data-chinese='{{langItem.chinese}}'
+      >
         <view class='lang'>{{langItem.chinese}}</view>
         <text class='iconfont icon-ok'
           wx:if='{{index===curLang.index}}'
