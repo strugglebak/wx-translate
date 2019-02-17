@@ -13,18 +13,24 @@
 }
 
 .lang-wrapper {
-  padding: 20rpx 40rpx;
+  padding-left: 40rpx;
+}
+
+.lang-wrapper .item {
+  padding: 20rpx 40rpx 20rpx 0;
   background: white;
   display: flex;
   flex-direction: row;
   align-items: center;
   border-bottom: 1px solid #ececec;
+  font-size: 32rpx;
 }
-.lang-wrapper .lang {
+.item .lang {
   flex: 1;
 }
-.lang-wrapper .iconfont {
+.item .iconfont {
   margin-left: auto;
   color: #aaa;
+  font-size: 28rpx;
 }
 
