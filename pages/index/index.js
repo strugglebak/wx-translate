@@ -13,7 +13,7 @@ Page({
     curLang: {},
     hideCloseIcon: true,
     query: '',
-    translateResult: ''
+    translateResult: '',
   },
 
   /**
@@ -59,6 +59,10 @@ Page({
       this.setData({
         translateResult: data.trans_result[0].dst
       })
+      let history = wx.getStorageSync('history') || []
+      history.push(data.trans_result[0])
+      history.length = history.length > 10 ? 10 : history.length
+      wx.setStorageSync('history', history)
     }, error=> {
       console.log(error)
     })

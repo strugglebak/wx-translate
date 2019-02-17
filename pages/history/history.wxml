@@ -1,67 +1,16 @@
 <!-- history.wxml -->
 <view class='container'>
-  <text class='history-title stiky'>翻译历史</text>
+  <text class='history-title {{state}}'>翻译历史</text>
 
   <scroll-view scroll-y class='history-result-list'>
-    <view class='history-result'>
-      <view class='orign-text'>你好</view>
-      <view class='tanslate-text'>Hello</view>
+    <view class='history-result'
+      wx:for='{{history}}'
+      wx:for-item='historyItem'
+      wx:key='index'
+    >
+      <view class='orign-text'>{{historyItem.src}}</view>
+      <view class='tanslate-text'>{{historyItem.dst}}</view>
     </view> 
-
-    <view class='history-result'>
-      <view class='orign-text'>你好</view>
-      <view class='tanslate-text'>Hello</view>
-    </view>
-
-    <view class='history-result'>
-      <view class='orign-text'>你好</view>
-      <view class='tanslate-text'>Hello</view>
-    </view>
-
-        <view class='history-result'>
-      <view class='orign-text'>你好</view>
-      <view class='tanslate-text'>Hello</view>
-    </view> 
-
-    <view class='history-result'>
-      <view class='orign-text'>你好</view>
-      <view class='tanslate-text'>Hello</view>
-    </view>
-
-    <view class='history-result'>
-      <view class='orign-text'>你好</view>
-      <view class='tanslate-text'>Hello</view>
-    </view>
-
-        <view class='history-result'>
-      <view class='orign-text'>你好</view>
-      <view class='tanslate-text'>Hello</view>
-    </view> 
-
-    <view class='history-result'>
-      <view class='orign-text'>你好</view>
-      <view class='tanslate-text'>Hello</view>
-    </view>
-
-    <view class='history-result'>
-      <view class='orign-text'>你好</view>
-      <view class='tanslate-text'>Hello</view>
-    </view>
-
-        <view class='history-result'>
-      <view class='orign-text'>你好</view>
-      <view class='tanslate-text'>Hello</view>
-    </view> 
-
-    <view class='history-result'>
-      <view class='orign-text'>你好</view>
-      <view class='tanslate-text'>Hello</view>
-    </view>
-
-    <view class='history-result'>
-      <view class='orign-text'>你好</view>
-      <view class='tanslate-text'>Hello</view>
-    </view>
   </scroll-view>
 
 </view>
