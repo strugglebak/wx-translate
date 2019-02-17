@@ -7,6 +7,8 @@
     wx:for-item='langItem'
     bindtap='onTapItem'
     data-index='{{index}}'
+    data-lang='{{langItem.lang}}'
+    data-chinese='{{langItem.chinese}}'
   >
     <view class='lang-wrapper'>
       <view class='item'>

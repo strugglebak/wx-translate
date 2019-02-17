@@ -25,6 +25,7 @@ Page({
    */
   onTapItem: function (e) {
     let langObject = e.currentTarget.dataset
+    console.log(langObject)
     // 本地设置
     this.setData({
       curLang: langObject

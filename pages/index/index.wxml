@@ -4,7 +4,7 @@
     <navigator
       url='/pages/change/change'
     >
-      <text class='lang'>翻译成英文</text>
+      <text class='lang'>翻译成{{curLang.chinese}}</text>
       <text class='iconfont icon-down'></text>
     </navigator>    
   </view>
