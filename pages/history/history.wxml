@@ -7,6 +7,8 @@
       wx:for='{{history}}'
       wx:for-item='historyItem'
       wx:key='index'
+      bindtap='onTapReLaunch'
+      data-query='{{historyItem.query}}'
     >
       <view class='orign-text'>{{historyItem.query}}</view>
       <view class='tanslate-text'>{{historyItem.result}}</view>

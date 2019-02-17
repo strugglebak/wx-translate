@@ -29,4 +29,12 @@ Page({
       })
     }
   },
+
+  onTapReLaunch: function (e) {
+    console.log('data-set', e.currentTarget.dataset)
+    let url = `/pages/index/index?query=${e.currentTarget.dataset.query}`
+    wx.reLaunch({
+      url
+    })
+  }
 })
