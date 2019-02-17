@@ -8,14 +8,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-    curLang: {}
+    curLang: {},
+    hideCloseIcon: true,
+    query: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**
@@ -24,6 +26,30 @@ Page({
   onShow: function () {
     this.setData({
       curLang: app.globalData.curLang
+    })
+  },
+
+  onInput: function (e) {
+    this.setData({
+      query: e.detail.value
+    })
+    if (this.data.query.length > 0) {
+      this.setData({
+        hideCloseIcon: false
+      })
+    } else {
+      this.setData({
+        hideCloseIcon: true
+      })
+    }
+  },
+  onConfirm: function () {
+    if (!this.data.query) { return }
+  },
+  onTapClose: function () {
+    this.setData({
+      query: '',
+      hideCloseIcon: true
     })
   }
 })

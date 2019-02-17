@@ -11,8 +11,18 @@
 
   <view class='input-area'>
     <view class='textarea-container'>
-      <textarea>翻译原文</textarea>
-      <text class='iconfont icon-close'></text>
+      <textarea
+        placeholder='请输入要翻译的文本'
+        placeholder-style='color: #8995a1;'
+        value='{{query}}'
+        bindinput='onInput'
+        bindconfirm='onConfirm'
+        bindblur='onConfirm'
+      ></textarea>
+      <text class='iconfont icon-close'
+        bindtap='onTapClose'
+        hidden='{{hideCloseIcon}}'
+      ></text>
     </view>
   </view>
 
