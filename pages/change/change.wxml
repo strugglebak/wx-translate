@@ -1,24 +1,20 @@
 <!-- change.wxml -->
 <view class='container'>
   <text class='title'>翻译成</text>
-  <view class='lang-list'>
+  <view class='lang-list'
+    wx:for='{{langList}}'
+    wx:key='index'
+    wx:for-item='langItem'
+    bindtap='onTapItem'
+    data-index='{{index}}'
+  >
     <view class='lang-wrapper'>
       <view class='item'>
-         <view class='lang'>英文</view>
-        <text class='iconfont icon-ok'></text>
+        <view class='lang'>{{langItem.chinese}}</view>
+        <text class='iconfont icon-ok'
+          wx:if='{{index===curLang.index}}'
+        ></text>
       </view>    
-    </view>
-    <view class='lang-wrapper'>
-      <view class='item'>
-        <view class='lang'>英文</view>
-        <text class='iconfont icon-ok'></text>
-      </view> 
-    </view>
-    <view class='lang-wrapper'>
-      <view class='item'>
-        <view class='lang'>英文</view>
-        <text class='iconfont icon-ok'></text>
-      </view> 
-    </view>   
+    </view>  
   </view>
 </view>
