@@ -1,1 +1,18 @@
 <!-- change.wxml -->
+<view class='container'>
+  <text class='title'>翻译成</text>
+  <view class='lang-list'>
+    <view class='lang-wrapper'>
+      <view class='lang'>英文</view>
+      <text class='iconfont icon-ok'></text>
+    </view>
+    <view class='lang-wrapper'>
+      <view class='lang'>中文</view>
+      <text class='iconfont icon-ok'></text>
+    </view>
+    <view class='lang-wrapper'>
+      <view class='lang'>日语</view>
+      <text class='iconfont icon-ok'></text>
+    </view>   
+  </view>
+</view>
