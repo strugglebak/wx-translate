@@ -12,8 +12,6 @@ function translate(
   return new Promise((resolve, reject)=> {
     let salt = Date.now()
     let sign = md5(`${appid}${q}${salt}${key}`)
-    console.log(sign)
-    // q = encodeURI(q)
     wx.request({
       url, 
       data: {

@@ -29,7 +29,9 @@
   <view class='output-area'>
     <text class='title'>译文</text>
     <view class='result-container'>
-      <text class='result'>{{translateResult}}</text>
+      <text class='result'
+        wx:if='{{translateResult}}'
+      >{{translateResult}}</text>
     </view>
   </view>
 

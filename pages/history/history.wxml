@@ -8,8 +8,8 @@
       wx:for-item='historyItem'
       wx:key='index'
     >
-      <view class='orign-text'>{{historyItem.src}}</view>
-      <view class='tanslate-text'>{{historyItem.dst}}</view>
+      <view class='orign-text'>{{historyItem.query}}</view>
+      <view class='tanslate-text'>{{historyItem.result}}</view>
     </view> 
   </scroll-view>
 

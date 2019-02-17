@@ -13,7 +13,7 @@ Page({
     curLang: {},
     hideCloseIcon: true,
     query: '',
-    translateResult: '',
+    translateResult: null,
   },
 
   /**
@@ -48,6 +48,7 @@ Page({
   },
   onConfirm: function () {
     if (!this.data.query) { return }
+    console.log('query 为空这里是进不来的')
     translate(
       this.data.query,
       {
@@ -56,11 +57,30 @@ Page({
       }
     ).then(data=> {
       console.log(data)
-      this.setData({
-        translateResult: data.trans_result[0].dst
-      })
       let history = wx.getStorageSync('history') || []
-      history.push(data.trans_result[0])
+      let resultArray = []
+      for (let i=0; i<data.trans_result.length; i++) {
+        resultArray.push(data.trans_result[i])
+      }
+      console.log(resultArray)
+      let src = []
+      let dst = []
+      resultArray.forEach(key=> {
+        src.push(key['src'])
+        dst.push(key['dst'])
+      })
+      let queryString = src.join('\n')
+      let resultString = dst.join('\n')
+      console.log(queryString, resultString)
+
+      this.setData({
+        translateResult: resultString
+      })
+
+      history.push({
+        query: queryString,
+        result: resultString
+      })
       history.length = history.length > 10 ? 10 : history.length
       wx.setStorageSync('history', history)
     }, error=> {
