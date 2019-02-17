@@ -12,7 +12,8 @@ Page({
   data: {
     curLang: {},
     hideCloseIcon: true,
-    query: ''
+    query: '',
+    translateResult: ''
   },
 
   /**
@@ -55,6 +56,9 @@ Page({
       }
     ).then(data=> {
       console.log(data)
+      this.setData({
+        translateResult: data.trans_result[0].dst
+      })
     }, error=> {
       console.log(error)
     })

@@ -9,37 +9,37 @@ App({
     curLang: {},
     langList: [
       {
-        'lang': 'English',
+        'lang': 'en',
         'index': 0,
         'chinese': '英文'
       },
       {
-        'lang': 'Chinese',
+        'lang': 'zh',
         'index': 1,
         'chinese': '中文'
       },
       {
-        'lang': 'Japanese',
+        'lang': 'jp',
         'index': 2,
         'chinese': '日语'
       },
       {
-        'lang': 'Korean',
+        'lang': 'kor',
         'index': 3,
         'chinese': '韩语'
       },
       {
-        'lang': 'French',
+        'lang': 'fra',
         'index': 4,
         'chinese': '法语'
       },
       {
-        'lang': 'Spanish',
+        'lang': 'spa',
         'index': 5,
         'chinese': '西班牙语'
       },
       {
-        'lang': 'Arabic',
+        'lang': 'ara',
         'index': 6,
         'chinese': '阿拉伯语'
       }

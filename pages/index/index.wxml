@@ -29,7 +29,7 @@
   <view class='output-area'>
     <text class='title'>译文</text>
     <view class='result-container'>
-      <text class='result'>翻译结果</text>
+      <text class='result'>{{translateResult}}</text>
     </view>
   </view>
 
