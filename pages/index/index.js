@@ -1,4 +1,6 @@
 //index.js
+import {translate} from '../../utils/baidu-translate-api.js'
+
 //获取应用实例
 const app = getApp()
 
@@ -45,6 +47,17 @@ Page({
   },
   onConfirm: function () {
     if (!this.data.query) { return }
+    translate(
+      this.data.query,
+      {
+        from: 'auto',
+        to: this.data.curLang.lang
+      }
+    ).then(data=> {
+      console.log(data)
+    }, error=> {
+      console.log(error)
+    })
   },
   onTapClose: function () {
     this.setData({

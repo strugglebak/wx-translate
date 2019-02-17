@@ -21,12 +21,12 @@ view.textarea-container textarea {
   background: white;
   padding: 30rpx;
   padding-right: 0;
-  width: calc(100% - 48rpx);
+  width: calc(100% - 110rpx);
   font-size: 34rpx;
 }
 view.textarea-container .iconfont {
   position: absolute;
-  top: 20rpx; right: 12rpx;
+  top: 30rpx; right: 40rpx;
   z-index: 999;
   font-size: 40rpx;
   color: #888;
