@@ -27,9 +27,12 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    this.setData({
-      curLang: app.globalData.curLang
-    })
+    if (this.data.curLang.lang !== app.globalData.curLang.lang) {
+      this.setData({
+        curLang: app.globalData.curLang
+      })
+      this.onConfirm();
+    } 
   },
 
   onInput: function (e) {
