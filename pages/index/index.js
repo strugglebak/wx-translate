@@ -13,7 +13,7 @@ Page({
     curLang: {},
     hideCloseIcon: true,
     query: '',
-    translateResult: null,
+    translateResult: '',
   },
 
   /**
@@ -48,7 +48,6 @@ Page({
   },
   onConfirm: function () {
     if (!this.data.query) { return }
-    console.log('query 为空这里是进不来的')
     translate(
       this.data.query,
       {
@@ -90,7 +89,8 @@ Page({
   onTapClose: function () {
     this.setData({
       query: '',
-      hideCloseIcon: true
+      hideCloseIcon: true,
+      translateResult: ''
     })
   }
 })
