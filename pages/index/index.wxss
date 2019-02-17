@@ -22,6 +22,7 @@ view.textarea-container textarea {
   padding: 30rpx;
   padding-right: 0;
   width: calc(100% - 48rpx);
+  font-size: 34rpx;
 }
 view.textarea-container .iconfont {
   position: absolute;
@@ -42,6 +43,7 @@ view.output-area text.title {
 }
 view.output-area .result-container {
   padding: 20rpx 0;
+  font-size: 34rpx;
 }
 
 view.copyright {
