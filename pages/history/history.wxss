@@ -25,11 +25,19 @@ scroll-view.history-result-list {
 }
 view.history-result {
   margin-top: 40rpx;
-  padding: 0 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+view.history-result:last-child {
+  margin-bottom: 40rpx;
 }
 .orign-text {
   color: #8995a1;
+  padding: 0 40rpx;
+  overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
 }
 .tanslate-text {
   margin-top: 16rpx;
+  padding: 0 40rpx;
+  overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
 }
