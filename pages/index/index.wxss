@@ -45,6 +45,9 @@ view.output-area .result-container {
   padding: 20rpx 0;
   font-size: 34rpx;
 }
+view.output-area .result {
+  word-break: break-all;
+}
 
 view.copyright {
   color: #999;
