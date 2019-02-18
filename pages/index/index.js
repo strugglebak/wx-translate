@@ -84,7 +84,7 @@ Page({
         translateResult: resultString
       })
 
-      history.push({
+      history.unshift({
         query: queryString,
         result: resultString
       })
