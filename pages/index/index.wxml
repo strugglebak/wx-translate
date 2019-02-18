@@ -17,7 +17,6 @@
         value='{{query}}'
         bindinput='onInput'
         bindconfirm='onConfirm'
-        bindblur='onConfirm'
       ></textarea>
       <text class='iconfont icon-close'
         bindtap='onTapClose'
