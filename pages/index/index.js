@@ -14,8 +14,7 @@ Page({
     hideCloseIcon: true,
     query: '',
     translateResult: '',
-    prefix: {},
-    next: []
+    prefix: {}
   },
 
   /**
