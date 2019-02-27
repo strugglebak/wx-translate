@@ -38,7 +38,7 @@ Page({
         curLang: app.globalData.curLang
       })
       this.onConfirm();
-    } 
+    }
   },
 
   onInput: function (e) {
