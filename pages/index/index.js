@@ -14,7 +14,8 @@ Page({
     hideCloseIcon: true,
     query: '',
     translateResult: '',
-    prefix: {}
+    prefix: {},
+    next: []
   },
 
   /**
@@ -71,7 +72,6 @@ Page({
           prefix: history[0]
         })
       }
-
       let resultArray = []
       for (let i=0; i<data.trans_result.length; i++) {
         resultArray.push(data.trans_result[i])
@@ -98,10 +98,9 @@ Page({
         })
       } else {
         let prefix = this.data.prefix
-        console.log('prefix', prefix)
         if (prefix && prefix.query && prefix.result
           && queryString !== prefix.query
-          && resultString !== prefix.result) {
+          || resultString !== prefix.result) {
           history.unshift({
             query: queryString,
             result: resultString
