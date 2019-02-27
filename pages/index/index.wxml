@@ -25,6 +25,10 @@
     </view>
   </view>
 
+  <button
+    bindtap='onConfirm'
+  >点击翻译</button>
+
   <view class='output-area'>
     <text class='title'>译文</text>
     <view class='result-container'>
@@ -33,6 +37,7 @@
       >{{translateResult}}</view>
     </view>
   </view>
+
 
   <view class='copyright'>
     <text>© 2019 strugglebak</text>

@@ -10,9 +10,9 @@ navigator .iconfont {
   font-size: 20rpx;
   color: #8995a1;
 }
-view.input-area {
+/* view.input-area {
   border-bottom: 1px solid #c7cee0;
-}
+} */
 view.textarea-container {
   background: white;
   position: relative;
@@ -47,6 +47,22 @@ view.output-area .result-container {
 }
 view.output-area .result {
   word-break: break-all;
+}
+
+button {
+  margin: 20rpx 20rpx;
+  font-size: 32rpx;
+  position: relative;
+}
+button::after {
+  position: absolute;
+  content: '';
+  display: block;
+  border: 1px solid black;
+  top: 0; left: 0;
+  bottom: 0; right: 0;
+  transform-origin: 0 0;
+  z-index: 2;
 }
 
 view.copyright {

@@ -8,7 +8,7 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#1c1b21",
     "navigationBarTitleText": "翻译小助手",
-    "navigationBarTextStyle": "#fff"
+    "navigationBarTextStyle": "white"
   },
   "tabBar":{
     "position": "top",
