@@ -3,7 +3,7 @@
 
 ## 二维码
 <div align="center">
-    <img src="https://i.loli.net/2019/02/27/5c7656307e497.jpeg" width=300>
+    <img src="https://i.loli.net/2019/03/21/5c93867e3d49b.jpeg" width=300>
 </div>
 
 ## 页面展示
