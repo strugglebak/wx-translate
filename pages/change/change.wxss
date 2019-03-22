@@ -1,5 +1,4 @@
 /* change.wxss */
-/* change.wxss */
 .container {
   background: #f8f8f8;
 }
@@ -14,6 +13,7 @@
 
 .lang-wrapper {
   padding-left: 40rpx;
+  background: white;
 }
 
 .lang-wrapper .item {

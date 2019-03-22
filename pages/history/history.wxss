@@ -16,8 +16,12 @@ view.container {
   z-index: 999;
   transition: all 0.3s;
 }
+.history-title {
+  border: none;
+}
 .history-title.stiky {
   background-color: white;
+  border: none;
 }
 scroll-view.history-result-list {
   margin-top: 50rpx;
